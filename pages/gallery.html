@@ -4,58 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CarBee</title>
+    <title>Car Shop - Gallery</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/cards.css" />
-    <link rel="stylesheet" href="./styles/gallery.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./../styles/footer.css" />
+    <link rel="stylesheet" href="./../styles/header.css" />
+    <link rel="stylesheet" href="./../styles/navbar.css" />
+    <link rel="stylesheet" href="./../styles/gallery.css" />
+    <link rel="stylesheet" href="./../styles/index.css" />
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <h1>Gallery</h1>
+    </header>
 
     <nav>
-      <a href="./pages/gallery.html">Gallery</a>
+      <a href="./../index.html">Home</a>
 
-      <a href="./pages/about.html">About Us</a>
+      <a href="./about.html">About Us</a>
 
-      <a href="./pages/contact.html">Contact Us</a>
+      <a href="./contact.html">Contact Us</a>
     </nav>
 
     <main>
-      <section class="intro">
-        <article>
-          <p>
-            <span
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-              illum. Recusandae quo rerum nisi autem beatae, delectus itaque
-              nulla quos voluptatem esse et. Minima molestias velit, facilis
-              nesciunt at tempore.</span
-            ><span
-              >Natus, consequatur quibusdam. Consequuntur ipsam id sint delectus
-              ad, quod dicta maxime dolor consectetur modi nihil reiciendis a
-              assumenda ut? Neque magnam obcaecati, explicabo vitae aspernatur
-              veritatis est odio eius.</span
-            >
-          </p>
-        </article>
-      </section>
-
       <section class="gallery">
         <div class="card">
-          <img src="./images/cars/audi.jpg" alt="Audi Car" />
+          <img src="./../images/cars/audi.jpg" alt="Audi Car" />
 
           <h3>Audi</h3>
 
@@ -73,7 +47,7 @@
         </div>
 
         <div class="card">
-          <img src="./images/cars/camaro.jpg" alt="Chevrolet Camaro Car" />
+          <img src="./../images/cars/camaro.jpg" alt="Chevrolet Camaro Car" />
 
           <h3>Chevrolet Camaro</h3>
 
@@ -91,7 +65,7 @@
         </div>
 
         <div class="card">
-          <img src="./images/cars/nissan-ariya.jpg" alt="Nissan Ariya Car" />
+          <img src="./../images/cars/nissan-ariya.jpg" alt="Nissan Ariya Car" />
 
           <h3>Nissan Ariya</h3>
 
@@ -109,7 +83,7 @@
         </div>
 
         <div class="card">
-          <img src="./images/cars/ford-mustang.jpg" alt="Ford Mustang Car" />
+          <img src="./../images/cars/ford-mustang.jpg" alt="Ford Mustang Car" />
 
           <h3>Ford Mustang</h3>
 
@@ -127,7 +101,7 @@
         </div>
 
         <div class="card">
-          <img src="./images/cars/lamborghini.jpg" alt="Lamborghini Car" />
+          <img src="./../images/cars/lamborghini.jpg" alt="Lamborghini Car" />
 
           <h3>Lamborghini</h3>
 
@@ -139,6 +113,69 @@
           </p>
 
           <h6>$120,000</h6>
+
+          <button type="button" class="show-more">Show more</button>
+          <button type="button" class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="./../images/cars/mercedes-amg.jpg"
+            alt="Mercedes Benz AMG Car"
+          />
+
+          <h3>Mercedes Benz AMG</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corrupti
+            dolor cumque esse, beatae nisi quaerat ducimus, consequuntur eos
+            voluptas explicabo ullam magnam facere a! Veritatis maxime libero
+            illo natus?
+          </p>
+
+          <h6>$65,000</h6>
+
+          <button type="button" class="show-more">Show more</button>
+          <button type="button" class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="./../images/cars/nissan-sentra.jpg"
+            alt="Nissan Sentra Car"
+          />
+
+          <h3>Nissan Sentra</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corrupti
+            dolor cumque esse, beatae nisi quaerat ducimus, consequuntur eos
+            voluptas explicabo ullam magnam facere a! Veritatis maxime libero
+            illo natus?
+          </p>
+
+          <h6>$15,000</h6>
+
+          <button type="button" class="show-more">Show more</button>
+          <button type="button" class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="./../images/cars/toyota-corolla.jpg"
+            alt="Toyota Corolla Car"
+          />
+
+          <h3>Toyota Corolla</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corrupti
+            dolor cumque esse, beatae nisi quaerat ducimus, consequuntur eos
+            voluptas explicabo ullam magnam facere a! Veritatis maxime libero
+            illo natus?
+          </p>
+
+          <h6>$20,000</h6>
 
           <button type="button" class="show-more">Show more</button>
           <button type="button" class="buy-now">Buy Now</button>
@@ -155,7 +192,7 @@
             <img
               width="25"
               height="25"
-              src="./images/icons/facebook.png"
+              src="../images/icons/facebook.png"
               alt="Facebook Icon"
             />
           </a>
@@ -166,7 +203,7 @@
             <img
               width="25"
               height="25"
-              src="./images/icons/instagram.png"
+              src="../images/icons/instagram.png"
               alt="Instagram Icon"
             />
           </a>
@@ -177,7 +214,7 @@
             <img
               width="25"
               height="25"
-              src="./images/icons/linkedin.png"
+              src="../images/icons/linkedin.png"
               alt="LinkedIn Icon"
             />
           </a>
@@ -188,7 +225,7 @@
             <img
               width="25"
               height="25"
-              src="./images/icons/twitter.png"
+              src="../images/icons/twitter.png"
               alt="Twitter Icon"
             />
           </a>
@@ -199,7 +236,7 @@
             <img
               width="25"
               height="25"
-              src="./images/icons/github.png"
+              src="../images/icons/github.png"
               alt="Github Icon"
             />
           </a>
