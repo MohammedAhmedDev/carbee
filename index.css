@@ -1,8 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
 header {
+  display: grid;
+  place-items: center;
+  background-color: #3c3584;
+  color: #ffa84a;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  padding: 1rem;
+  width: calc(100% / 3);
+  text-align: center;
+  background-color: #ffa84a;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #3c3584;
+}
+
+footer {
+  background-color: #3c3584;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer ul {
+  justify-content: flex-end;
+  display: flex;
+  list-style-type: none;
+}
+
+footer li {
+  margin-left: 1rem;
+}
+
+.gallery h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+}
+.gallery a {
+  text-decoration: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.gallery .card {
+  width: 24%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+.gallery .card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  transform: translate(0px, -8px);
+  transition: 0.6s;
+}
+.gallery img {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.gallery p {
+  text-align: center;
+  color: #b2bec3;
+  padding: 0 8px;
+  margin: 1rem 0;
+}
+.gallery h6 {
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+}
+
+.gallery button {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.gallery .show-more {
+  background-color: #3c3584;
+}
+
+.gallery .show-more:hover {
+  background-color: #514aa7;
+}
+
+.gallery .buy-now {
+  background-color: #2183a2;
+}
+
+.gallery .buy-now:hover {
+  background-color: #48adcc;
+}
+
+@media (max-width: 1000px) {
+  .gallery .card {
+    width: 47%;
+  }
+}
+
+@media (max-width: 750px) {
+  .gallery .card {
+    width: 100%;
+  }
+}
+
+/* Begin of Home Page Styles */
+header.home-header {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -16,14 +169,126 @@ header {
   background-attachment: fixed;
 }
 
-main {
+main.home-main {
   padding: 1rem;
 }
 
-.intro {
+.home-main .intro {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   padding: 1rem;
   color: #2183a2;
   font-size: 1.5rem;
   text-align: justify;
 }
+
+/* End of Home Page Styles */
+
+/* Begin of About Page Styles */
+
+header.about-header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./../images/about.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+
+main.about-main {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+main.about-main section {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 1rem;
+  text-align: justify;
+  margin: 1.5rem 0;
+}
+
+/* End of About Page Styles */
+
+/* Begin of About Page Styles */
+
+header.contact-header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header.contact-header::before {
+  content: "";
+  background-image: url("./../images/contact-us.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+header.contact-header h1 {
+  box-shadow: #0000003d 0px 3px 8px;
+  background-color: #ffffff9a;
+  padding: 1rem;
+  position: relative;
+  font-size: 5rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #ffa84a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #f3932d;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  background-color: #fff;
+  padding: 20px;
+}
+
+.intro {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 1rem;
+  color: #2183a2;
+  font-size: 1.12rem;
+  text-align: justify;
+}
+
+/* End of About Page Styles */
